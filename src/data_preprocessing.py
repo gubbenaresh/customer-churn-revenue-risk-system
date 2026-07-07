@@ -7,7 +7,7 @@ def load_data(path):
     return pd.read_csv(path) 
 
 def split_data(df , target_col="Churn"):
-    X = df.drop(colums=[target_col])
+    X = df.drop(columns=[target_col])
     y = df[target_col] 
 
     return train_test_split(
