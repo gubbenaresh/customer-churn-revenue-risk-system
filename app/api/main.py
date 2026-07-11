@@ -6,6 +6,7 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
 
 from src.predict import predict_churn
+from app.api.schemas import CustomerInput
 
 app = FastAPI(
     title="Customer Churn Revenue Risk API",
